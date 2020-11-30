@@ -6,6 +6,7 @@ lst=[1,2,3,4,5,6]  #print 2nd largest number
 #print(j)
 
 
+
 lst.sort(reverse=True)
 print(lst[1])
 
