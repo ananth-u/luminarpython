@@ -11,13 +11,15 @@ for lines in f:
     rol,name,course=lines.rstrip("\n").split(",")
     if rol not in students:
         students[rol]={"rol":rol,"name":name,"course":course}
-print(students)
+for k,v in students.items():
+    print(k,v)
 def print_data(**kwargs):
     print(kwargs)
-
     rol=kwargs["id"]
 
+
     if rol in students:
+
         print(students[rol]["name"])
         if "property" in kwargs:
            prop=kwargs["property"]
@@ -32,4 +34,4 @@ def print_data(**kwargs):
 
 
 
-print_data(id="102",property="course")
+print_data(id="103",property="course")
