@@ -33,5 +33,8 @@ for emp in dev:
     print(emp.name," ",emp.desg," ",emp.sal)
 
 #print emp details with salary >200
+sal=list(filter(lambda ob:int(ob.sal)>200,lsr))
+for emp in sal:
+    print(emp.name," ",emp.desg)
 
 #print emp details with salary>200

@@ -26,5 +26,5 @@ from re import *
 mather=finditer(pattern,'abc Z@7k')
 
 for match in mather:
-    print(match.start())
-    print(match.group())
+    print(match.start()) #print the position
+    print(match.group()) #print the matching group

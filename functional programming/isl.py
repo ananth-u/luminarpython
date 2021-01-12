@@ -8,7 +8,7 @@ isl=[
 
 ]
 
-#print team anems in uppercase:
+#print team names in uppercase:
 upp=list(map(lambda team:team["team_name"].upper(),isl))
 print(upp)
 
